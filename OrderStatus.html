@@ -1,0 +1,279 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Customer App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <script type='text/javascript' src='js/jquery-2.2.3.min.js'></script>
+    <link href="css/hamburger.css" rel="stylesheet">
+    <style type="text/css">
+        #footer {
+            position: fixed;
+            bottom: 0px;
+            width: 100%;
+        }
+
+        button:focus {
+            outline: none !important;
+        }
+
+        .center {
+            width: 150px;
+            margin: 40px auto;
+        }
+
+        .bs-wizard {
+            margin-top: 40px;
+        }
+
+        /*Form Wizard*/
+        .bs-wizard {
+            border-bottom: solid 1px #e0e0e0;
+            padding: 0 0 10px 0;
+        }
+
+            .bs-wizard > .bs-wizard-step {
+                padding: 0;
+                position: relative;
+            }
+
+                .bs-wizard > .bs-wizard-step + .bs-wizard-step {
+                }
+
+                .bs-wizard > .bs-wizard-step .bs-wizard-stepnum {
+                    color: #595959;
+                    font-size: 16px;
+                    margin-bottom: 5px;
+                }
+
+                .bs-wizard > .bs-wizard-step .bs-wizard-info {
+                    color: #999;
+                    font-size: 14px;
+                }
+
+                .bs-wizard > .bs-wizard-step > .bs-wizard-dot {
+                    position: absolute;
+                    width: 30px;
+                    height: 30px;
+                    display: block;
+                    background: #fbe8aa;
+                    top: 45px;
+                    left: 50%;
+                    margin-top: -15px;
+                    margin-left: -15px;
+                    border-radius: 50%;
+                }
+
+                    .bs-wizard > .bs-wizard-step > .bs-wizard-dot:after {
+                        content: ' ';
+                        width: 14px;
+                        height: 14px;
+                        background: #fbbd19;
+                        border-radius: 50px;
+                        position: absolute;
+                        top: 8px;
+                        left: 8px;
+                    }
+
+                .bs-wizard > .bs-wizard-step > .progress {
+                    position: relative;
+                    border-radius: 0px;
+                    height: 8px;
+                    box-shadow: none;
+                    margin: 20px 0;
+                }
+
+                    .bs-wizard > .bs-wizard-step > .progress > .progress-bar {
+                        width: 0px;
+                        box-shadow: none;
+                        background: #fbe8aa;
+                    }
+
+                .bs-wizard > .bs-wizard-step.complete > .progress > .progress-bar {
+                    width: 100%;
+                }
+
+                .bs-wizard > .bs-wizard-step.active > .progress > .progress-bar {
+                    width: 50%;
+                }
+
+                .bs-wizard > .bs-wizard-step:first-child.active > .progress > .progress-bar {
+                    width: 0%;
+                }
+
+                .bs-wizard > .bs-wizard-step:last-child.active > .progress > .progress-bar {
+                    width: 100%;
+                }
+
+                .bs-wizard > .bs-wizard-step.disabled > .bs-wizard-dot {
+                    background-color: #f5f5f5;
+                }
+
+                    .bs-wizard > .bs-wizard-step.disabled > .bs-wizard-dot:after {
+                        opacity: 0;
+                    }
+
+                .bs-wizard > .bs-wizard-step:first-child > .progress {
+                    left: 50%;
+                    width: 50%;
+                }
+
+                .bs-wizard > .bs-wizard-step:last-child > .progress {
+                    width: 50%;
+                }
+
+                .bs-wizard > .bs-wizard-step.disabled a.bs-wizard-dot {
+                    pointer-events: none;
+                }
+    </style>
+</head>
+<body class="bg">
+    <!-- nav -->
+    <div class="nav_main">
+        <!--<div class="overlay"></div>
+        <div class="mobile-side-menu">
+            <ul>
+                <li><a href="main.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                <li><a href="menu.html"><i class="fa fa-compass" aria-hidden="true"></i>Our Food</a></li>
+                <li><a href="blog.html"><i class="fa fa-picture-o" aria-hidden="true"></i>Blog</a></li>
+                <li><a href="team.html"><i class="fa fa-users" aria-hidden="true"></i>Our Chef</a></li>
+                <li><a href="short-codes.html"><i class="fa fa-dashcube" aria-hidden="true"></i>Short Codes</a></li>
+                <li class="active"><a href="icons.html"><i class="fa fa-random" aria-hidden="true"></i>Web Icons</a></li>
+                <li><a href="contact.html"><i class="fa fa-map-marker" aria-hidden="true"></i>Location</a></li>
+                <li><a href="sign-in.html"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In</a></li>
+            </ul>
+        </div>-->
+        <div class="navbar">
+            <div class="agile_container">
+                <div class="w3_agile_nav_main_left">
+                    <div class="toggleMenu">
+                        <button class="hamburger hamburger--emphatic" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/slide-from-top.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.mobile-side-menu').slideFromTop({
+                menuBtn: $('.toggleMenu'),
+                navbar: $('.navbar'),
+                menuSpeed: 500,
+                bodyOverlay: $('.overlay')
+            });
+        });
+    </script>
+    <!-- //nav -->
+    <!-- breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="w3layouts_breadcrumbs_left">
+                <ul>
+                    <li><i class="fa fa-home" aria-hidden="true"></i><a href="main.html">Home</a><span>/</span></li>
+                    <li><i class="fa fa-random" aria-hidden="true"></i>Subscription</li>
+                </ul>
+            </div>
+            <div class="w3layouts_breadcrumbs_right">
+                <h3>Subscription</h3>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <!-- //breadcrumbs -->
+    <!-- short-codes -->
+    <div class="menu" style="margin-top:10px;">
+        <div class="container">
+            <h3 class="agileits_head w3_agileits_head">Order Status<i class="fa fa-random" aria-hidden="true"></i></h3>
+            <div class="grid_3 grid_5" style="margin-top:25px;">
+                <h3>Progress</h3>
+                <div class="container">
+
+
+                    <div class="row bs-wizard" style="border-bottom:0;">
+
+                        <div class="col-xs-3 bs-wizard-step complete">
+                            <div class="text-center bs-wizard-stepnum">Step 1</div>
+                            <div class="progress"><div class="progress-bar"></div></div>
+                            <a href="#" class="bs-wizard-dot"></a>
+                            <div class="bs-wizard-info text-center"></div>
+                        </div>
+
+                        <div class="col-xs-3 bs-wizard-step complete">
+                            <!-- complete -->
+                            <div class="text-center bs-wizard-stepnum">Step 2</div>
+                            <div class="progress"><div class="progress-bar"></div></div>
+                            <a href="#" class="bs-wizard-dot"></a>
+                            <div class="bs-wizard-info text-center"></div>
+                        </div>
+
+                        <div class="col-xs-3 bs-wizard-step active">
+                            <!-- complete -->
+                            <div class="text-center bs-wizard-stepnum">Step 3</div>
+                            <div class="progress"><div class="progress-bar"></div></div>
+                            <a href="#" class="bs-wizard-dot"></a>
+                            <div class="bs-wizard-info text-center"></div>
+                        </div>
+
+                        <div class="col-xs-3 bs-wizard-step disabled">
+                            <!-- active -->
+                            <div class="text-center bs-wizard-stepnum">Step 4</div>
+                            <div class="progress"><div class="progress-bar"></div></div>
+                            <a href="#" class="bs-wizard-dot"></a>
+                            <div class="bs-wizard-info text-center"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="grid_3 grid_5">
+                <h3>
+                    Details</h4>
+                    <table class="table">
+                        <tbody>
+                            <tr>
+                                <td style="padding:5px !important;">3 X Paneer Tikka Roll</td>
+                                <td style="float:right;">&#8377 420</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:5px !important;">Subtotal</td>
+                                <td style="float:right;">&#8377 420</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:5px !important;">Delivery Fee</td>
+                                <td style="float:right;">&#8377 0</td>
+                            </tr>
+                            <tr>
+                                <td style="padding:5px !important;"><h4>Total</h4></td>
+                                <td style="float:right;"><h4>&#8377 420</h4></td>
+                            </tr>
+                        <tbody>
+                    </table>
+            </div>
+        </div>
+    </div>
+    <!-- for bootstrap working -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        // Look for .hamburger
+        var hamburger = document.querySelector(".hamburger");
+        // On click
+        hamburger.addEventListener("click", function () {
+            // Toggle class "is-active"
+            hamburger.classList.toggle("is-active");
+            // Do something else, like open/close menu
+        });
+    </script>
+    <!-- //for bootstrap working -->
+</body>
+</html>	

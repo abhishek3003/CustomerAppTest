@@ -1,0 +1,156 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Customer App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <script type='text/javascript' src='js/jquery-2.2.3.min.js'></script>
+    <!--<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Bitter:400,400i,700&subset=latin-ext" rel="stylesheet">-->
+    <link href="css/hamburger.css" rel="stylesheet">
+    <style type="text/css">
+        #footer {
+            position: fixed;
+            bottom: 0px;
+            width: 100%;
+        }
+
+        button:focus {
+            outline: none !important;
+        }
+
+        .pic {
+            margin-top: 50px;
+            width: 120px;
+            margin-left: 50px;
+            margin-bottom: -60px;
+        }
+
+        .panel {
+            background-image: url("images/banner1.jpg");
+        }
+
+        .name {
+            position: absolute;
+            padding-left: 200px;
+            font-size: 30px;
+        }
+
+        .dropdown {
+            position: absolute;
+        }
+    </style>
+</head>
+<body class="bg">
+    <!-- nav -->
+    <div class="nav_main">
+        <div class="overlay"></div>
+        <div class="mobile-side-menu">
+            <ul>
+                <li><a href="RestaurantList.html"><i class="fa fa-home" aria-hidden="true"></i>Search</a></li>
+                <li><a href="Notifications.html">Notification</a></li>
+                <li class="active"><a href="MyAccount.html">My Account</a></li>
+                <li><a href="Subscription.html">My Plan</a></li>
+                <li><a href="#">Total Savings</a></li>
+                <li><a href="OrderHistory.html">Order History</a></li>
+                <li><a href="AddAddress.html">Manage Address</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+        </div>
+        <div class="navbar">
+            <div class="agile_container">
+                <div class="w3_agile_nav_main_left">
+                    <div class="toggleMenu">
+                        <button class="hamburger hamburger--emphatic" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/slide-from-top.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.mobile-side-menu').slideFromTop({
+                menuBtn: $('.toggleMenu'),
+                navbar: $('.navbar'),
+                menuSpeed: 500,
+                bodyOverlay: $('.overlay')
+            });
+        });
+    </script>
+    <!-- //nav -->
+    <!-- breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="w3layouts_breadcrumbs_left">
+                <ul>
+                    <li><i class="fa fa-home" aria-hidden="true"></i><a href="main.html">Home</a><span>/</span></li>
+                    <li><i class="fa fa-random" aria-hidden="true"></i>Subscription</li>
+                </ul>
+            </div>
+            <div class="w3layouts_breadcrumbs_right">
+                <h3>Subscription</h3>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <!-- //breadcrumbs -->
+    <!-- short-codes -->
+    <div class="menu" style="margin-top:10px;">
+        <div class="container">
+            <h3 class="agileits_head w3_agileits_head">
+                Profile<i class="fa fa-random" aria-hidden="true"></i>
+            </h3>
+            <div class="grid_3 grid_5" style="margin-top:20px;">
+                <div style="margin-bottom:20px;">
+                </div>
+                <div class="grid_3 grid_5" style="margin-top:25px;">
+                    <div class="panel">
+                        <img class="pic img-circle" src="images/120x120.png" alt="...">
+                        <div class="name"><small>User Name</small></div>
+                    </div>
+                    <div style="margin-top:75px;">
+                        <h3>Saved Addresses</h3>
+                        <a href="AddAddress.html">+ Add address</a>
+                    </div>
+                    <div style="margin-top:25px;">
+                        <h3>Saved Payment Methods</h3>
+                        <a href="PaymentMode.html">+ Add payment method</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- for bootstrap working -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".btn-pref .btn").click(function () {
+                $(".btn-pref .btn").removeClass("btn-primary").addClass("btn-default");
+                // $(".tab").addClass("active"); // instead of this do the below
+                $(this).removeClass("btn-default").addClass("btn-primary");
+            });
+        });
+
+        // Look for .hamburger
+        var hamburger = document.querySelector(".hamburger");
+        // On click
+        hamburger.addEventListener("click", function () {
+            // Toggle class "is-active"
+            hamburger.classList.toggle("is-active");
+            // Do something else, like open/close menu
+        });
+    </script>
+    <!-- //for bootstrap working -->
+</body>
+</html>

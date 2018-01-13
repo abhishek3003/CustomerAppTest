@@ -1,0 +1,227 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Customer App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <script type='text/javascript' src='js/jquery-2.2.3.min.js'></script>
+    <!--<link href="//fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i,800,800i&subset=cyrillic,cyrillic-ext,greek,greek-ext,latin-ext,vietnamese" rel="stylesheet">
+    <link href="//fonts.googleapis.com/css?family=Bitter:400,400i,700&subset=latin-ext" rel="stylesheet">-->
+    <link href="css/hamburger.css" rel="stylesheet">
+    <style type="text/css">
+        #footer {
+            position: fixed;
+            bottom: 0px;
+            width: 100%;
+        }
+
+        button:focus {
+            outline: none !important;
+        }
+
+        .pic {
+            margin-top: 50px;
+            width: 120px;
+            margin-left: 50px;
+            margin-bottom: -60px;
+        }
+
+        .panel {
+            background-image: url("images/banner1.jpg");
+        }
+
+        .name {
+            position: absolute;
+            padding-left: 200px;
+            font-size: 30px;
+        }
+
+        .dropdown {
+            position: absolute;
+        }
+    </style>
+</head>
+<body class="bg">
+    <!-- nav -->
+    <div class="nav_main">
+        <div class="overlay"></div>
+        <div class="mobile-side-menu">
+            <ul>
+                <li><a href="main.html"><i class="fa fa-home" aria-hidden="true"></i>Home</a></li>
+                <li><a href="menu.html"><i class="fa fa-compass" aria-hidden="true"></i>Our Food</a></li>
+                <li><a href="blog.html"><i class="fa fa-picture-o" aria-hidden="true"></i>Blog</a></li>
+                <li><a href="team.html"><i class="fa fa-users" aria-hidden="true"></i>Our Chef</a></li>
+                <li><a href="short-codes.html"><i class="fa fa-dashcube" aria-hidden="true"></i>Short Codes</a></li>
+                <li class="active"><a href="icons.html"><i class="fa fa-random" aria-hidden="true"></i>Web Icons</a></li>
+                <li><a href="contact.html"><i class="fa fa-map-marker" aria-hidden="true"></i>Location</a></li>
+                <li><a href="sign-in.html"><i class="fa fa-sign-in" aria-hidden="true"></i>Sign In</a></li>
+            </ul>
+        </div>
+        <div class="navbar">
+            <div class="agile_container">
+                <div class="w3_agile_nav_main_left">
+                    <div class="toggleMenu">
+                        <button class="hamburger hamburger--emphatic" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/slide-from-top.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.mobile-side-menu').slideFromTop({
+                menuBtn: $('.toggleMenu'),
+                navbar: $('.navbar'),
+                menuSpeed: 500,
+                bodyOverlay: $('.overlay')
+            });
+        });
+    </script>
+    <!-- //nav -->
+    <!-- breadcrumbs -->
+    <div class="breadcrumbs">
+        <div class="container">
+            <div class="w3layouts_breadcrumbs_left">
+                <ul>
+                    <li><i class="fa fa-home" aria-hidden="true"></i><a href="main.html">Home</a><span>/</span></li>
+                    <li><i class="fa fa-random" aria-hidden="true"></i>Subscription</li>
+                </ul>
+            </div>
+            <div class="w3layouts_breadcrumbs_right">
+                <h3>Subscription</h3>
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <!-- //breadcrumbs -->
+    <!-- short-codes -->
+    <div class="menu">
+        <div class="container">
+            <div class="grid_3 grid_5" style="margin-top:20px;">
+                <div class="bs-example bs-example-tabs" role="tabpanel" data-example-id="togglable-tabs">
+                    <ul id="myTab" class="nav nav-tabs" role="tablist">
+                        <li role="presentation" class="active"><a href="#profile" id="profile-tab" role="tab" data-toggle="tab" aria-controls="profile" aria-expanded="true">Profile</a></li>
+                        <li role="presentation"><a href="#orderhistory" role="tab" id="orderhistory-tab" data-toggle="tab" aria-controls="orderhistory">Order history</a></li>
+                        <li role="presentation"><a href="#subscription" role="tab" id="subscription-tab" data-toggle="tab" aria-controls="subscription">Subscription</a></li>
+                    </ul>
+                    <div id="myTabContent" class="tab-content">
+                        <div role="tabpanel" class="tab-pane fade in active" id="profile" aria-labelledby="profile-tab">
+                            <div style="margin-bottom:20px;">
+                            </div>
+                            <div class="grid_3 grid_5" style="margin-top:25px;">
+                                <div class="panel">
+                                    <img class="pic img-circle" src="images/120x120.png" alt="...">
+                                    <div class="name"><small>User Name</small></div>
+                                </div>
+                                <div style="margin-top:75px;">
+                                    <h3>Saved Addresses</h3>
+                                    <a href="AddAddress.html">+ Add address</a>
+                                </div>
+                                <div style="margin-top:25px;">
+                                    <h3>Saved Payment Methods</h3>
+                                    <a href="PaymentMode.html">+ Add payment method</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="orderhistory" aria-labelledby="orderhistory-tab">
+                            <div style="margin-bottom:20px;">
+                            </div>
+                            <div class="agileits_w3layouts_blog" style="margin-bottom:10px;">
+                                <div style="float:left;">
+                                    <i class="fa fa-calendar" aria-hidden="true"></i>10 November 2016
+                                </div>
+                                <div style="float:right;">
+                                    Delivered
+                                </div>
+                                <div style="clear:both;padding-top:10px;">
+                                    <h3><a href="#">Restaurant Name</a></h3>
+                                    <p>Restaurant address </br> &#8377 1200</p>
+                                </div>
+                            </div>
+                            <div class="agileits_w3layouts_blog" style="margin-bottom:10px;">
+                                <div style="float:left;">
+                                    <i class="fa fa-calendar" aria-hidden="true"></i>10 November 2016
+                                </div>
+                                <div style="float:right;">
+                                    Delivered
+                                </div>
+                                <div style="clear:both;padding-top:10px;">
+                                    <h3><a href="#">Restaurant Name</a></h3>
+                                    <p>Restaurant address </br> &#8377 450</p>
+                                </div>
+                            </div>
+                            <div class="agileits_w3layouts_blog" style="margin-bottom:10px;">
+                                <div style="float:left;">
+                                    <i class="fa fa-calendar" aria-hidden="true"></i>10 November 2016
+                                </div>
+                                <div style="float:right;">
+                                    Delivered
+                                </div>
+                                <div style="clear:both;padding-top:10px;">
+                                    <h3><a href="#">Restaurant Name</a></h3>
+                                    <p>Restaurant address </br> &#8377 1200</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div role="tabpanel" class="tab-pane fade" id="subscription" aria-labelledby="subscription-tab">
+                            <div style="margin-bottom:20px;">
+                            </div>
+                            <div class="newsletter">
+                                <div class="container" style="text-align:center;">
+                                    <h3 class="agileits_head w3_agileits_head" style="color:white !important;">
+                                        Subscription Name<i class="fa fa-envelope-o" aria-hidden="true"></i>
+                                    </h3>
+                                    <p style="color:white;margin-top:15px;">Description Line1</p>
+                                    <p style="color:white;margin-top:5px;">Description Line2</p>
+                                    <p style="color:white;margin-top:5px;">Description Line3</p>
+                                </div>
+                            </div>
+                            <div class="grid_3 grid_5" style="margin-top:20px;">
+                                <h3>How this works</h3>
+                                <p>Step 1: ABC XYZ</p>
+                                <p>Step 2: PQR LMN</p>
+                                <p>Step 3: JKHI LMNOP</p>
+                            </div>
+                            <div class="grid_3 grid_5" style="text-align: center;">
+                                <a href="OrderSummary.html" class="btn btn-3 w3_agile_btn" style="width:90%;">Buy Membership</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- for bootstrap working -->
+    <script src="js/bootstrap.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $(".btn-pref .btn").click(function () {
+                $(".btn-pref .btn").removeClass("btn-primary").addClass("btn-default");
+                // $(".tab").addClass("active"); // instead of this do the below
+                $(this).removeClass("btn-default").addClass("btn-primary");
+            });
+        });
+
+        // Look for .hamburger
+        var hamburger = document.querySelector(".hamburger");
+        // On click
+        hamburger.addEventListener("click", function () {
+            // Toggle class "is-active"
+            hamburger.classList.toggle("is-active");
+            // Do something else, like open/close menu
+        });
+    </script>
+    <!-- //for bootstrap working -->
+</body>
+</html>

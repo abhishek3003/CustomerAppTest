@@ -1,0 +1,245 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Customer App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="keywords" content="" />
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href="css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <link href="css/style.css" type="text/css" rel="stylesheet" media="all">
+    <link rel="stylesheet" href="css/font-awesome.min.css" />
+    <script type='text/javascript' src='js/jquery-2.2.3.min.js'></script>
+    <link href="css/hamburger.css" rel="stylesheet">
+    <style type="text/css">
+        #footer {
+            position: fixed;
+            bottom: 0px;
+            width: 100%;
+        }
+
+        button:focus {
+            outline: none !important;
+        }
+    </style>
+</head>
+<body class="bg">
+    <!-- nav -->
+    <div class="nav_main">
+        <div class="overlay"></div>
+        <div class="mobile-side-menu">
+            <ul>
+                <li class="active"><a href="RestaurantList.html"><i class="fa fa-home" aria-hidden="true"></i>Search</a></li>
+                <li><a href="Notifications.html">Notification</a></li>
+                <li><a href="MyAccount.html">My Account</a></li>
+                <li><a href="Subscription.html">My Plan</a></li>
+                <li><a href="#">Total Savings</a></li>
+                <li><a href="OrderHistory.html">Order History</a></li>
+                <li><a href="AddAddress.html">Manage Address</a></li>
+                <li><a href="#">More</a></li>
+            </ul>
+        </div>
+        <div class="navbar">
+            <div class="agile_container">
+                <div class="w3_agile_nav_main_left">
+                    <div class="toggleMenu">
+                        <button class="hamburger hamburger--emphatic" type="button">
+                            <span class="hamburger-box">
+                                <span class="hamburger-inner"></span>
+                            </span>
+                        </button>
+                    </div>
+                </div>
+                <div class="clearfix"> </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="js/slide-from-top.js"></script>
+    <script type="text/javascript">
+        $(document).ready(function () {
+            $('.mobile-side-menu').slideFromTop({
+                menuBtn: $('.toggleMenu'),
+                navbar: $('.navbar'),
+                menuSpeed: 500,
+                bodyOverlay: $('.overlay')
+            });
+        });
+    </script>
+    <!-- //nav -->
+    <!-- logo -->
+    <div class="agileinfo_logo">
+    </div>
+    <!-- //logo -->
+    <!-- banner -->
+    <div class="banner">
+        <div class="container">
+            <div class="agileits_banner_left">
+                <h2>we offer you the best offers</h2>
+                <!--<div class="w3ls_more">
+                    <a href="contact.html" class="btn btn-3 btn-3e icon-arrow-right">Mail Us</a>
+                </div>-->
+            </div>
+            <div class="agileits_banner_right">
+                <img src="images/2.png" alt=" " class="img-responsive" />
+            </div>
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <!-- //banner -->
+    <div class="col-lg-6 in-gp-tb" style="margin-top:10px;">
+        <div class="input-group">
+            <input type="text" class="form-control" placeholder="Search for...">
+            <span class="input-group-btn">
+                <button class="btn btn-default" type="button">Go!</button>
+            </span>
+        </div><!-- /input-group -->
+    </div>
+    <!-- banner-bottom -->
+    <div class="banner-bottom" style="margin-top:10px;">
+        <div class="container">
+            <h3>Delivery restaurants</h3>
+        </div>
+        <ul id="flexiselDemo1">
+            <li>
+                <a href="RestaurantMain.html">
+                    <div class="w3layouts_banner_bottom_left">
+                        <img src="images/1.jpg" alt=" " class="img-responsive" />
+                        <h4>Pizza Bite</h4>
+                        <p>Andheri</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="RestaurantMain.html">
+                    <div class="w3layouts_banner_bottom_left">
+                        <img src="images/2.jpg" alt=" " class="img-responsive" />
+                        <h4>Central Point</h4>
+                        <p>Bandra</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="RestaurantMain.html">
+                    <div class="w3layouts_banner_bottom_left">
+                        <img src="images/3.jpg" alt=" " class="img-responsive" />
+                        <h4>Hotel Namrata</h4>
+                        <p>Borivali</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="RestaurantMain.html">
+                    <div class="w3layouts_banner_bottom_left">
+                        <img src="images/4.jpg" alt=" " class="img-responsive" />
+                        <h4>Hot & Spice</h4>
+                        <p>Miraroad</p>
+                    </div>
+                </a>
+            </li>
+        </ul>
+        <script type="text/javascript">
+            $(window).load(function () {
+                $("#flexiselDemo1").flexisel({
+                    visibleItems: 4,
+                    animationSpeed: 1000,
+                    autoPlay: true,
+                    autoPlaySpeed: 3000,
+                    pauseOnHover: true,
+                    enableResponsiveBreakpoints: true,
+                    responsiveBreakpoints: {
+                        portrait: {
+                            changePoint: 480,
+                            visibleItems: 2
+                        },
+                        landscape: {
+                            changePoint: 640,
+                            visibleItems: 3
+                        },
+                        tablet: {
+                            changePoint: 768,
+                            visibleItems: 4
+                        }
+                    }
+                });
+
+            });
+        </script>
+        <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+    </div>
+    <!-- //banner-bottom -->
+    <!-- banner-bottom -->
+    <div class="banner-bottom" style="margin-top:10px;">
+        <div class="container">
+            <h3>Dine-out restaurants</h3>
+        </div>
+        <ul id="flexiselDemo2">
+            <li>
+                <a href="RestaurantMain.html">
+                    <div class="w3layouts_banner_bottom_left">
+                        <img src="images/1.jpg" alt=" " class="img-responsive" />
+                        <h4>Zeal</h4>
+                        <p>Marol, Mumbai</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="RestaurantMain.html">
+                    <div class="w3layouts_banner_bottom_left">
+                        <img src="images/2.jpg" alt=" " class="img-responsive" />
+                        <h4>Lake Side</h4>
+                        <p>Versova, Mumbai</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="RestaurantMain.html">
+                    <div class="w3layouts_banner_bottom_left">
+                        <img src="images/3.jpg" alt=" " class="img-responsive" />
+                        <h4>Bollywood cafe</h4>
+                        <p>Ghatkopar, Mumbai</p>
+                    </div>
+                </a>
+            </li>
+            <li>
+                <a href="RestaurantMain.html">
+                    <div class="w3layouts_banner_bottom_left">
+                        <img src="images/4.jpg" alt=" " class="img-responsive" />
+                        <h4>Q 'N' Q</h4>
+                        <p>Andheri, Mumbai</p>
+                    </div>
+                </a>
+            </li>
+
+        </ul>
+        <!--<script type="text/javascript">
+            $(window).load(function () {
+                $("#flexiselDemo2").flexisel({
+                    visibleItems: 4,
+                    animationSpeed: 1000,
+                    autoPlay: true,
+                    autoPlaySpeed: 3000,
+                    pauseOnHover: true,
+                    enableResponsiveBreakpoints: true,
+                    responsiveBreakpoints: {
+                        portrait: {
+                            changePoint: 480,
+                            visibleItems: 2
+                        },
+                        landscape: {
+                            changePoint: 640,
+                            visibleItems: 3
+                        },
+                        tablet: {
+                            changePoint: 768,
+                            visibleItems: 4
+                        }
+                    }
+                });
+
+            });
+        </script>-->
+        <script type="text/javascript" src="js/jquery.flexisel.js"></script>
+    </div>
+    <script src="js/jquery-ui.js"></script>
+</body>
+</html>
