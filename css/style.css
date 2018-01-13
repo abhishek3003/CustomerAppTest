@@ -2207,7 +2207,7 @@ input.checkbox:checked:after {
 		top: -33%;
 	}
 	.agileinfo_logo {
-		padding: 4em 0 0em;
+		padding: 3em 0 0em;
 	}
 	.agileits_banner_left h2 {
 		font-size: 1.22em;
@@ -2336,7 +2336,7 @@ input.checkbox:checked:after {
 		font-size: 1.03em;
 	}
 	.agile_container {
-		padding: .5em 1em;
+		padding: 0em 0em;
 	}
 	.banner {
 		min-height: 161px;
